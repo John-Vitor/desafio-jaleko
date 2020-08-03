@@ -3,13 +3,13 @@
       <div class="header"> 
         <img class="logo-header" src="./assets/logo-jaleko.svg" alt="logo">
         <div  class="slogan">
-          <h1 class="centralizado"> {{ titulo }} </h1> 
+          <h1 class="texto"> {{ titulo }} </h1> 
         </div>
       </div>
        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet"> <!-- Fonte Nunito-->
         
 
-        <div class="corpo">
+        <div class="corpo"> <!-- Lista de videos -->
           
            <input class="filtro" type="search" v-model="search" placeholder="Busque um video">
             
@@ -45,7 +45,7 @@
             </div>  
        </div>
 
-      <!-- Footer  -->
+      <!-- Imagens Footer  -->
         <div class="footer">
           
               <img class="logo-footer" src="./assets/logo-footer.png" alt="logo-rodape">
@@ -213,7 +213,7 @@ export default {
     
   }
 
-  .centralizado {
+  .texto {
     width: 100%;
     height: 120px;
     text-align: center;
@@ -221,6 +221,8 @@ export default {
     color: white;    
     
   }
+
+/*  Css dos videos (box) */
 
   .box-videos {
     
@@ -294,6 +296,8 @@ export default {
   box-shadow: 1px 1px 2px #333333;
 
 }
+
+/* Footer */ 
 
 .footer {
   width: 96%;
